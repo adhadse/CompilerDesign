@@ -1,11 +1,11 @@
 package CompilerDesign
 
 func IsValidKeyword(s string) bool {
-	if s == TOK_CONTINUE ||
-		s == TOK_IF ||
-		s == TOK_ELSE ||
-		s == TOK_BREAK ||
-		s == TOK_FOR {
+	if s == TokContinue ||
+		s == TokIf ||
+		s == TokElse ||
+		s == TokBreak ||
+		s == TokFor {
 		return true
 	}
 	return false

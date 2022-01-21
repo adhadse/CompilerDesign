@@ -10,18 +10,18 @@ func IsValidIdentifier(s string) bool {
 		return false
 	}
 	// if first character is invalid
-	if !(str[0] >= TOK_SMALL_A && str[0] <= TOK_SMALL_Z ||
-		str[0] >= TOK_CAP_A && str[0] <= TOK_CAP_Z ||
-		str[0] == TOK_UNDERSCORE) {
+	if !(str[0] >= TokSmallA && str[0] <= TokSmallZ ||
+		str[0] >= TokCapA && str[0] <= TokCapZ ||
+		str[0] == TokUnderscore) {
 		return false
 	}
 
 	// Traverse the string for rest of characters
 	for i := 1; i < len(str); i++ {
-		if !(str[i] >= TOK_SMALL_A && str[i] <= TOK_SMALL_Z ||
-			str[i] >= TOK_CAP_A && str[i] <= TOK_CAP_Z ||
-			str[i] >= TOK_0 && str[i] <= TOK_9 ||
-			str[i] == TOK_UNDERSCORE) {
+		if !(str[i] >= TokSmallA && str[i] <= TokSmallZ ||
+			str[i] >= TokCapA && str[i] <= TokCapZ ||
+			str[i] >= Tok0 && str[i] <= Tok9 ||
+			str[i] == TokUnderscore) {
 			return false
 		}
 	}
