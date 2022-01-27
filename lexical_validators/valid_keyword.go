@@ -1,6 +1,6 @@
-package CompilerDesign
+package lexical_validators
 
-func IsValidKeyword(s string) bool {
+func IsKeyword(s string) bool {
 	if s == TokContinue ||
 		s == TokIf ||
 		s == TokElse ||

@@ -1,12 +1,12 @@
-package CompilerDesign
+package lexical_validators
 
-func IsValidIdentifier(s string) bool {
-	// Check if string containing single word, without any spaces
-	// is identifier or not by checking if between a and Z or A and Z
-	// or it starts with underscore.
-	// Also make sure it is not a valid keyword
+// IsIdentifier check if string containing single word, without any spaces
+// is identifier or not by checking if between a and Z or A and Z
+// or it starts with underscore.
+// Also make sure it is not a valid keyword
+func IsIdentifier(s string) bool {
 	str := []rune(s)
-	if IsValidKeyword(s) {
+	if IsKeyword(s) {
 		return false
 	}
 	// if first character is invalid
