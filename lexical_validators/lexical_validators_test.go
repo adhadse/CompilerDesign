@@ -92,5 +92,5 @@ func TestSubString(t *testing.T) {
 }
 
 func TestAnalyze(t *testing.T) {
-	Analyze("int a = b + 1c; ")
+	Analyze("for i=1; i<10;i++;")
 }
