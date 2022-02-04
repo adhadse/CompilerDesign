@@ -26,16 +26,16 @@ func FirstOfNonTerminal(c rune, productionSet [][]rune) []rune {
 		// Find production with X as LHS
 		if productionSet[i][0] == c {
 			// If X -> ε is a production, then add ε to FIRST(X)
-			if productionSet[i][2] == 'ε' {
+			if productionSet[i][3] == 'ε' {
 				result = addToResultSet(result, 'ε')
-			} else if !unicode.IsUpper(productionSet[i][2]) {
-				result = addToResultSet(result, productionSet[i][2])
+			} else if !unicode.IsUpper(productionSet[i][3]) {
+				result = addToResultSet(result, productionSet[i][3])
 			} else {
 				// If X is a non-terminal, and X -> Y1 Y2 ... Yk
 				// is a production, then add 'a' to FIRST(X)
 				// if for some i, a is in FIRST (Yi),
 				// and ε is in all of FIRST(Y1), ..., FIRST(Yi-1)
-				result = FirstOfNonTerminal(productionSet[i][2], productionSet)
+				result = FirstOfNonTerminal(productionSet[i][3], productionSet)
 			}
 		}
 	}

@@ -6,14 +6,14 @@ import (
 
 func TestFirstOfNonTerminal(t *testing.T) {
 	testProductionString := []string{
-		"E=TD",
-		"D=+TD",
-		"D=ε",
-		"T=FS",
-		"S=*FS",
-		"S=ε",
-		"F=(E)",
-		"F=a",
+		"E->TD",
+		"D->+TD",
+		"D->ε",
+		"T->FS",
+		"S->*FS",
+		"S->ε",
+		"F->(E)",
+		"F->a",
 	}
 	var testProductionSet = make([][]rune, len(testProductionString))
 	for i := range testProductionString {
