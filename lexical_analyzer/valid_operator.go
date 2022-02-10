@@ -1,4 +1,4 @@
-package lexical_validators
+package lexical_analyzer
 
 // IsOperator returns 'true' if the character/rune is an OPERATOR.
 func IsOperator(ch rune) bool {

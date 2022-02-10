@@ -1,4 +1,4 @@
-package lexical_validators
+package lexical_analyzer
 
 // IsIdentifier check if string containing single word, without any spaces
 // is identifier or not by checking if between a and Z or A and Z

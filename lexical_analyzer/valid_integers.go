@@ -1,4 +1,4 @@
-package lexical_validators
+package lexical_analyzer
 
 // IsInteger returns 'true' if the string is an INTEGER.
 func IsInteger(s string) bool {

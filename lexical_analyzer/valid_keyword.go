@@ -1,4 +1,4 @@
-package lexical_validators
+package lexical_analyzer
 
 func IsKeyword(s string) bool {
 	if s == TokContinue ||

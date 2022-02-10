@@ -1,4 +1,4 @@
-package parser
+package semantic_analyzer
 
 func compareRuneSlice(a, b []rune) bool {
 	if len(a) != len(b) {

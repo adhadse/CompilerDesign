@@ -1,4 +1,4 @@
-package lexical_validators
+package lexical_analyzer
 
 // IsDelimiter returns 'true' if the character/rune is a DELIMITER.
 func IsDelimiter(ch rune) bool {

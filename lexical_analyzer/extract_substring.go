@@ -1,4 +1,4 @@
-package lexical_validators
+package lexical_analyzer
 
 // SubString extracts the SUBSTRING from position
 // left to right(excluding) index.

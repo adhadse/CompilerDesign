@@ -1,4 +1,4 @@
-package lexical_validators
+package lexical_analyzer
 
 // IsRealNumber returns 'true' if the string is a REAL NUMBER.
 func IsRealNumber(s string) bool {

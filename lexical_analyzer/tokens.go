@@ -1,4 +1,4 @@
-package lexical_validators
+package lexical_analyzer
 
 const (
 	TokSmallA          = 'a'
